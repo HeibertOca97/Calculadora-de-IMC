@@ -1,2 +1,2 @@
 # TallerClase
-Calcular el indice de MC
+Calcular el IMC
