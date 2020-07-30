@@ -5,67 +5,92 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>IMC</title>
+ <link rel="shortcut icon" href="icon.png" type="image/x-icon">
  <link rel="stylesheet" href="index.css">
+ <!--ICONOS-->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <!--FUENTES-->
+ <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 </head>
 
 <body>
- <h1>Calculadora del Indice de Masa Corporal</h1>
+ <!--HEADER-->
+ <header>
+  <div>
+   <p><i class="fa fa-github fa-2x" aria-hidden="true"></i><strong> Calculadora IMC</strong></p>
+  </div>
+ </header>
+ <!--SECTION-->
  <section>
-  <div>
-   <input type="text" autocomplete="off" id="Estatura" placeholder="Estatura - Ej: 165" class="require">
-   <span class="msg"></span>
-  </div>
-  <div>
-   <input type="text" autocomplete="off" id="Peso" placeholder="Peso - Ej: 78.2" class="require">
-   <span class="msg"></span>
-  </div>
-  <div>
-   <button id="btn-calcular">Calcular</button>
-  </div>
-  <div>
-   <label>Resultado</label>
-   <p id="resultado"></p>
-  </div>
+  <!--FORMULARIO-->
+  <article>
+   <h1>Indice de Masa Corporal</h1>
+   <div>
+    <input type="text" autocomplete="off" id="Estatura" placeholder="Estatura (cm) - Ej: 165">
+    <div class=""></div>
+   </div>
+   <div>
+    <input type="text" autocomplete="off" id="Peso" placeholder="Peso (kg) - Ej: 68.59">
+    <div class=""></div>
+   </div>
+   <div>
+    <button id="btn-calcular" class="">Calcular</button>
+   </div>
+   <div>
+    <label>Resultado: </label> <strong id="resultado"> </strong>
+   </div>
+  </article>
+  <!--TABLA-->
+  <article>
+   <table>
+    <thead>
+     <tr>
+      <th>Indice de masa corporal (IMC)</th>
+      <th>Composicion corporal</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>Menos de 18.5</td>
+      <td>Por debajo de lo normal</td>
+     </tr>
+     <tr>
+      <td>18.5 - 24.9</td>
+      <td>Normal</td>
+     </tr>
+     <tr>
+      <td>25 - 29.9</td>
+      <td>Sobrepeso</td>
+     </tr>
+     <tr>
+      <td>30 - 34.9</td>
+      <td>Obesidad I</td>
+     </tr>
+     <tr>
+      <td>35 - 39.9</td>
+      <td>Obesidad II</td>
+     </tr>
+     <tr>
+      <td>Mas de 40</td>
+      <td>Obesidad II</td>
+     </tr>
+    </tbody>
+   </table>
+  </article>
  </section>
- <article>
-  <div id="info">
-
+ <div id="info"></div>
+ <!--FOOTER-->
+ <footer>
+  <div>
+   <p><i class="fa fa-graduation-cap" aria-hidden="true"></i> Desarrollador Web</p>
+   <p><i class="fa fa-user-o" aria-hidden="true"></i> Heibert Ocaña Rodriguez</p>
+   <p id="target_fa" title="Facebook">Facebook</p>
+   <p id="target_ins" title="Instagram">Instagram</p>
   </div>
-  <table>
-   <thead>
-    <tr>
-     <th>Indice de masa corporal (IMC)</th>
-     <th>Composicion corporal</th>
-    </tr>
-   </thead>
-   <tbody>
-    <tr>
-     <td>Menos de 18.5</td>
-     <td>Por debajo de lo normal</td>
-    </tr>
-    <tr>
-     <td>18.5 - 24.9</td>
-     <td>Normal</td>
-    </tr>
-    <tr>
-     <td>25 - 29.9</td>
-     <td>Sobrepeso</td>
-    </tr>
-    <tr>
-     <td>30 - 34.9</td>
-     <td>Obesidad I</td>
-    </tr>
-    <tr>
-     <td>35 - 39.9</td>
-     <td>Obesidad II</td>
-    </tr>
-    <tr>
-     <td>Mas de 40</td>
-     <td>Obesidad II</td>
-    </tr>
-   </tbody>
-  </table>
- </article>
+ </footer>
+ <picture><img src="icon.png" title="Logo"></picture>
  <script src="index.js"></script>
 </body>
 
