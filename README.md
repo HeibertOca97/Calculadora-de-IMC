@@ -1,2 +1,4 @@
 # Calculadora de IMC
-Es un taller en clase hecho con HTML5 - CSS3 - Javascript en donde se debe captura el peso y la altura de un individuo para posteriormente devolverle un resultado del total de su Indice de Masa Corporal.
+This is class work done with HTML5, CSS3, and Javascript :bulb: 
+- Where is the weight and height of the person obtained.
+- Subsequently return a result of the total of your Body Mass Index.
